@@ -1,0 +1,63 @@
+@import '../Pallete.scss';
+
+.button {
+	font-size: 16px;
+	padding: 0.4em 1.2em;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.3s;
+	border-width: 2px;
+	border-style: solid;
+	box-shadow: 2px 2px 10px $labelColorLight4;
+	outline: none;
+	&:active {
+		transform: scale(0.9);
+	}
+}
+
+.primary {
+	border-color: $teal;
+	&:hover {
+		background: $tealHover;
+		color: $labelColorDark1;
+	}
+}
+
+.danger {
+	border-color: $red;
+
+	&:hover {
+		color: $labelColorDark1;
+		background: $red;
+	}
+}
+
+.caution {
+	border-color: $yellow;
+	&:hover {
+		background: $yellow;
+	}
+}
+
+.warn {
+	border-color: $orange;
+	&:hover {
+		background: $orange;
+	}
+}
+
+.dark {
+	border-color: $indigo;
+	&:hover {
+		color: $labelColorDark1;
+		background: $indigo;
+	}
+}
+
+.dark-danger {
+	border-color: $pink;
+	&:hover {
+		color: $labelColorDark1;
+		background: $pink;
+	}
+}

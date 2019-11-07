@@ -1,0 +1,15 @@
+.form {
+	width: auto;
+	display: flex;
+	border: 1px solid red;
+	justify-content: center;
+	align-items: center;
+}
+
+.inline {
+	flex-direction: row;
+}
+
+.stacked {
+	flex-direction: column;
+}

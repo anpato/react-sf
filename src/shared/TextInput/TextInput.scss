@@ -1,0 +1,102 @@
+@import '../Pallete.scss';
+
+.text-input {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-top: 2em;
+	overflow: hidden;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 20px;
+	input {
+		font-size: 16px;
+		padding: 0.4em 0.6em;
+		border: none;
+		width: 100%;
+		outline: none;
+		height: 100%;
+		transition: all 0.4s;
+	}
+
+	label {
+		position: absolute;
+		transition: all 0.4s;
+		pointer-events: none;
+		transform: translateX(10px);
+		font-size: 18px;
+		width: 100%;
+		padding: 0.3em 0.6em;
+	}
+	span {
+		height: 4em;
+		width: 100%;
+	}
+
+	input:focus + label,
+	input:active + label,
+	input:valid + label {
+		transform: translateX(70%);
+	}
+
+	input:focus,
+	input:active,
+	input:valid {
+		width: 100%;
+	}
+}
+
+.primary-input {
+	border-color: $blue;
+	input:focus + label,
+	input:active + label,
+	input:valid + label {
+		background: $blue;
+	}
+}
+
+.danger-input {
+	border-color: $red;
+	input:focus + label,
+	input:active + label,
+	input:valid + label {
+		color: $labelColorDark1;
+		background: $red;
+	}
+}
+.caution-input {
+	border-color: $yellow;
+	input:focus + label,
+	input:active + label,
+	input:valid + label {
+		background: $yellow;
+	}
+}
+.warn-input {
+	border-color: $orange;
+	input:focus + label,
+	input:active + label,
+	input:valid + label {
+		background: $orange;
+	}
+}
+.dark-input {
+	border-color: $indigo;
+	input:focus + label,
+	input:active + label,
+	input:valid + label {
+		color: $labelColorDark1;
+		background: $indigo;
+	}
+}
+
+.dark-danger-input {
+	border-color: $pink;
+	input:focus + label,
+	input:active + label,
+	input:valid + label {
+		color: $labelColorDark1;
+		background: $pink;
+	}
+}
