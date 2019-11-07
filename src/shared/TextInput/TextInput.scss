@@ -24,20 +24,19 @@
 		position: absolute;
 		transition: all 0.4s;
 		pointer-events: none;
-		transform: translateX(10px);
+		left: 75%;
 		font-size: 18px;
-		width: 100%;
-		padding: 0.3em 0.6em;
+		padding: 0.3em 0.7em;
+		text-align: center;
 	}
 	span {
-		height: 4em;
 		width: 100%;
 	}
 
 	input:focus + label,
 	input:active + label,
 	input:valid + label {
-		transform: translateX(70%);
+		left: 75%;
 	}
 
 	input:focus,
